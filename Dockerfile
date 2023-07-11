@@ -5,7 +5,7 @@ FROM tomcat:latest
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy the webapp.war file to the Tomcat webapps directory
-COPY */webapp/target/webapp.war /usr/local/tomcat/webapps/ROOT.war
+COPY /webapp/target/webapp.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose the default Tomcat port
 EXPOSE 8081
