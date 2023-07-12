@@ -11,4 +11,4 @@ COPY /webapp/target/webapp.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8081
 
 # Start Tomcat when the container starts
-CMD ["catalina.sh", "run"]
+CMD ["catalina.sh", "start"]
